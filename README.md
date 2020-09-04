@@ -11,3 +11,7 @@
 ## Installation
 
 Convert script to .exe following [AutoHotKey documentation](https://www.autohotkey.com/docs/Scripts.htm#ahk2exe).
+
+## Run at startup
+
+Follow the [AutoHotKey documentation](https://www.autohotkey.com/docs/FAQ.htm#Startup).
