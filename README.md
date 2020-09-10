@@ -10,7 +10,7 @@
 
 ## Installation
 
-Convert script to .exe following [AutoHotKey documentation](https://www.autohotkey.com/docs/Scripts.htm#ahk2exe).
+Convert script to .exe following [AutoHotKey documentation](https://www.autohotkey.com/docs/Scripts.htm#ahk2exe). The script must be saved in ANSI (cp1252) encoding!
 
 ## Run at startup
 
