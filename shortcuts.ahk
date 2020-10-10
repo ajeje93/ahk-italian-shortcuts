@@ -10,5 +10,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^Space::Media_Play_Pause
 ; "AltGr + '" to print `
 <^>!'::SendInput, ``
-; "AltGr + ï¿½" to print ~
-<^>!ï¿½::SendInput, `~
+; "AltGr + ì" to print ~
+<^>!ì::SendInput, `~
