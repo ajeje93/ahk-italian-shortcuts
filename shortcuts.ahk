@@ -6,13 +6,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #PgUp::Send {Volume_Up 1}
 ; "WIN + PGDN" for volume down
 #PgDn::Send {Volume_Down 1}
-; "CTRL + LEFT" for previous song 
-^Left::Media_Prev
-; "CTRL + RIGHT" for next song 
-^Right::Media_Next
 ; "CTRL + SPACE" for pause song
 ^Space::Media_Play_Pause
 ; "AltGr + '" to print `
 <^>!'::SendInput, ``
-; "AltGr + ì" to print ~
-<^>!ì::SendInput, `~
+; "AltGr + ï¿½" to print ~
+<^>!ï¿½::SendInput, `~
