@@ -1,0 +1,27 @@
+name: Ahk2Exe and Release for ahk-italian-shortcuts
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  Ahk2Exe-and-Release:
+    name: Ahk2Exe and Release
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Ahk2Exe
+        uses: nekocodeX/GitHub-Action-Ahk2Exe@v1.0.1
+        with:
+          in: shortcuts.ahk
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: shortcuts.exe
+          fail_on_unmatched_files: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
